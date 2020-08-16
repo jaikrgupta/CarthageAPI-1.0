@@ -4,5 +4,5 @@
 		"AWS_SECRET_ACCESS_KEY": "TmJsHl7vvERFlvwBDi+qQokeam8fZGkXDBXf1AuS",
 		"AWS_DEFAULT_REGION": "ap-south-1"
 	},
-	"S3_Bucket": "mybucket-jaikr-963a3aae-70de-4ed6-b03d-176da1ab6652"
+	"S3_Bucket": null
 }
