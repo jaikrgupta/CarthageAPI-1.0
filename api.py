@@ -35,13 +35,13 @@ class API(Resource):
                 found = aws_client.download_from_bucket(file_id)
                 LOGGER.info(f"Flask app: {str(request.method)} : {str(TODOS.get('GET_Specific'))} : File download: {found}")
                 try:
-                    return make_response(send_from_directory(f'{os.getcwd()}/downloads', filename=file_id, as_attachment=True), 202)
+                    return send_from_directory(f'{os.getcwd()}/downloads', filename=file_id, as_attachment=True)
                 except FileNotFoundError:
                     LOGGER.exception("FileNotFoundError in Flask REST API call")
                     abort_if_todo_doesnt_exist(file_id)
         except Exception:
                 LOGGER.exception("Exception in Flask REST API call")
-                return jsonify([{str(TODOS.get('GET_Specific')): "File not available"}, {"AWS S3 Bucket": aws_client.s3_bucket}, 400])
+        return jsonify([{str(TODOS.get('GET_Specific')): "File-request failed"}, {"AWS S3 Bucket": aws_client.s3_bucket}, 400])
 
     def delete(self, file_id=''):
         if file_id == '':
@@ -58,7 +58,7 @@ class API(Resource):
             deleted = aws_client.delete_into_bucket(file_id)
             LOGGER.info(f"Flask app: {str(request.method)} : {str(TODOS.get('DELETE'))} : File delete: {deleted}")
             if deleted:
-                return jsonify([{str(TODOS.get('DELETE')): "File-delete successful"}, {"AWS S3 Bucket": aws_client.s3_bucket}, 200])
+                return jsonify([{str(TODOS.get('DELETE')): "File-delete successful"}, {"AWS S3 Bucket": aws_client.s3_bucket}, 202])
         except Exception:
             LOGGER.exception("Exception in Flask REST API call")
         return jsonify([{str(TODOS.get('DELETE')): "File-delete failed"}, {"AWS S3 Bucket": aws_client.s3_bucket}, 400])

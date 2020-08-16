@@ -17,7 +17,7 @@ LOGGER.info("CALL Flask Module")
 api = Api(app)
 api.add_resource(API, '/files', '/files/', '/files/<path:file_id>')
 app.logger.addHandler(LOGGER)
-app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 8 * 1024 * 1024
 
 @app.errorhandler(werkzeug.exceptions.BadRequest)
 def handle_bad_request(e):
