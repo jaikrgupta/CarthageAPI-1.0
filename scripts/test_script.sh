@@ -5,7 +5,7 @@ rm -f ../test-reports/test_script.log
 
 echo "### Test-script starting to check REST API endpoints on http://127.0.0.1:5000/ ###" >> ../test-reports/test_script.log
 
-echo "1.) GET /files - retrieves a list of files from AWS S3 bucket"
+echo "1.) GET /files - retrieves a list of files from AWS S3 bucket" >> ../test-reports/test_script.log
 curl http://127.0.0.1:5000/files >>  ../test-reports/test_script.log
 
 echo "Check the timestamp before uploading the file" >> ../test-reports/test_script.log
