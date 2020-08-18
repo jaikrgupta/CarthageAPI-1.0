@@ -28,5 +28,13 @@ pipeline {
                 sleep(5)
             }
         }
+        stage('Deployment') {
+            steps {
+                sh 'chmod 777 ./scripts/heroku.sh'
+                sh './scripts/heroku.sh'
+                sh 'cat ./test-reports/heroku_deployment.log'
+                sleep(5)
+            }
+        }
     }
 }
