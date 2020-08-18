@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+# CarthageAPI-1.0
+Python/Flask REST API endpoints for AWS S3 Bucket 
 
-You can use the [editor on GitHub](https://github.com/jaikrgupta/CarthageAPI-1.0/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Simple CURL Commands to test the REST API Endpoints
 
-### Markdown
+### GET /files - retrieves a list of files from AWS S3 bucket
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+`curl http://127.0.0.1:5000/files`
 
-```markdown
-Syntax highlighted code block
+### GET /files/:id - retrieves a spicific file
 
-# Header 1
-## Header 2
-### Header 3
+`curl -O http://127.0.0.1:5000/files/file_id`
 
-- Bulleted
-- List
+### POST /files - uploads file into S3 bucket
 
-1. Numbered
-2. List
+`curl -F file="@pathto/or/filename" http://127.0.0.1:5000/files`
 
-**Bold** and _Italic_ and `Code` text
+### DELETE /files/:id - deletes a specific file from S3 bucket
 
-[Link](url) and ![Image](src)
-```
+`curl -X DELETE http://127.0.0.1:5000/files/file_id`
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+## Prerequisites
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jaikrgupta/CarthageAPI-1.0/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- **Install and configure _AWS CLI_ with an _IAM User_ privileged to create, read, update, delete the _AWS S3 Buckets_**
 
-### Support or Contact
+- **Install and configure _Docker_ and _DockerHub_**
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- **Install and configure _Git_ and _GitBash_**
+
+- **Install and configure the _Jenkins_**
+
+- **Install and configure the _Heroku CLI_ for deployment**
+
+
+## Spin up the whole stack via _Jenkins_
+
+![image](https://drive.google.com/uc?export=view&id=17_QTdZ-zSHCBCe2zh6EYA_gFDtn_MykX)
+
+![image](https://drive.google.com/uc?export=view&id=1XgNty-K12Im2Y7EHW14sypUpmgsJSn-L)
+
+![image](https://drive.google.com/uc?export=view&id=1vZZ-XlQaSbonViuMu4lB5xUnXxEk3VxY)
+
+![image](https://drive.google.com/uc?export=view&id=191RwT7QO0EoO-AdpvYrbgrmPsXfIvg4n)
+
+![image](https://drive.google.com/uc?export=view&id=1Azr__mYl3gKIJ1SQDJp0bK0Kz4iIMzYB)
+
+
+> P.S. Kindly write here for more queries and suggestions @ **jai.jgec@gmail.com**
+
+> **©** **2020** The Project is intended for learning purposes only.
