@@ -6,7 +6,7 @@ rm -f test-reports/dockerize.log
 echo "### Dockrizing the Python/Flask app strated ###" >> test-reports/dockerize.log
 docker -v >> test-reports/dockerize.log
 
-echo "Listing Docker Containers" >> test-reports/dockerize.log
+echo "Listing all the Docker Containers" >> test-reports/dockerize.log
 docker ps -a >> test-reports/dockerize.log
 
 echo "List of available Docker images" >> test-reports/dockerize.log
