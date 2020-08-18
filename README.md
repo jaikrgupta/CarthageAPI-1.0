@@ -33,18 +33,20 @@ Python/Flask REST API endpoints for AWS S3 Bucket
 
 - **Install and configure the _Heroku CLI_ for deployment**
 
+
 ## Spin up the whole stack via _Jenkins_
 
 ![image](https://drive.google.com/uc?export=view&id=17_QTdZ-zSHCBCe2zh6EYA_gFDtn_MykX)
 
 ![image](https://drive.google.com/uc?export=view&id=1XgNty-K12Im2Y7EHW14sypUpmgsJSn-L)
 
-![image](https://drive.google.com/uc?export=view&id=1zyL9CdXnCYc128CNSouLpSTD8oIss1Au)
+![image](https://drive.google.com/uc?export=view&id=1vZZ-XlQaSbonViuMu4lB5xUnXxEk3VxY)
 
 ![image](https://drive.google.com/uc?export=view&id=191RwT7QO0EoO-AdpvYrbgrmPsXfIvg4n)
+
+![image](https://drive.google.com/uc?export=view&id=1vZZ-XlQaSbonViuMu4lB5xUnXxEk3VxY)
 
 
 > P.S. Kindly write here for more queries and suggestions @ **jai.jgec@gmail.com**
 
-
-> **©** The Project is intended for learning purpose.
+> **©** **2020** The Project is intended for learning purposes only.
