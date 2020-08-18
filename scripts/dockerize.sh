@@ -36,8 +36,8 @@ cat ./test-reports/test_script.log >> test-reports/dockerize.log
 echo "Stopping the running Docker container" >> test-reports/dockerize.log
 docker kill $(docker ps -q) >> test-reports/dockerize.log
 
-echo "Login to DockerHub: Authenticate using existing credentials" >> test-reports/dockerize.log
-docker login
+echo "Login to DockerHub" >> test-reports/dockerize.log
+docker login >> test-reports/dockerize.log
 
 echo "Re-tag the Docker Image with the username/key" >> test-reports/dockerize.log
 docker tag docker_flask_app jai6016/carthage_docker_app >> test-reports/dockerize.log

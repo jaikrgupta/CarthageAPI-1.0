@@ -1,8 +1,6 @@
 {
 	"endpoint": {
-		"AWS_ACCESS_KEY_ID": "AKIA3RHGAUGVR55A6VM6",
-		"AWS_SECRET_ACCESS_KEY": "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",
 		"AWS_DEFAULT_REGION": "ap-south-1"
 	},
-	"S3_Bucket": null
+	"S3_Bucket": "mybucket-jaikr-9267d473-1ac2-4d59-871a-edba7aa514e8"
 }

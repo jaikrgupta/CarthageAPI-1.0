@@ -9,12 +9,7 @@ with open("aws_S3_endpoint.json", 'r') as s3_endpoint:
 
 s3_bucket = connection['S3_Bucket']
 
-s3 = boto3.resource(
-    's3',
-    aws_access_key_id= connection['endpoint']['AWS_ACCESS_KEY_ID'],
-    aws_secret_access_key= connection['endpoint']['AWS_SECRET_ACCESS_KEY'],
-    region_name= connection['endpoint']['AWS_DEFAULT_REGION'],
-)
+s3 = boto3.resource('s3')
 
 def aws_connectivity_test(s3_bucket):
     if s3_bucket is None:
