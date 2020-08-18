@@ -23,7 +23,7 @@ Python/Flask REST API endpoints for AWS S3 Bucket
 
 ## Prerequisites
 
-- **Install and configure _AWS CLI_ with an _IAM User_ with privileges to create, read, update, delete the _AWS S3 Buckets_**
+- **Install and configure _AWS CLI_ with an _IAM User_ privileged to create, read, update, delete the _AWS S3 Buckets_**
 
 - **Install and configure _Docker_ and _DockerHub_**
 
@@ -44,7 +44,7 @@ Python/Flask REST API endpoints for AWS S3 Bucket
 
 ![image](https://drive.google.com/uc?export=view&id=191RwT7QO0EoO-AdpvYrbgrmPsXfIvg4n)
 
-![image](https://drive.google.com/uc?export=view&id=1vZZ-XlQaSbonViuMu4lB5xUnXxEk3VxY)
+![image](https://drive.google.com/uc?export=view&id=1Azr__mYl3gKIJ1SQDJp0bK0Kz4iIMzYB)
 
 
 > P.S. Kindly write here for more queries and suggestions @ **jai.jgec@gmail.com**
