@@ -37,4 +37,4 @@ create_new_folder(f'{os.getcwd()}/downloads')
 if __name__ == '__main__':
     LOGGER.info("Staring Flask Module")
     assert aws_client.s3_bucket is not None
-    app.run(host='0.0.0.0', debug=False)
+    app.run(host='0.0.0.0', port=os.environ.get('PORT', '5000'), debug=False)
