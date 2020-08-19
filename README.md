@@ -49,4 +49,4 @@ Python/Flask REST API endpoints for AWS S3 Bucket
 
 > P.S. Kindly write here for more queries and suggestions @ **jai.jgec@gmail.com**
 
-> **©** **2020** The Project is intended for learning purposes only.
+> **©** **2020** The Project is publicly intended for learning purpose.
