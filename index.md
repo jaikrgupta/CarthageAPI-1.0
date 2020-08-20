@@ -38,7 +38,7 @@
 
 #### The Jenkins pipeline mainly goes through these stages in Series: 
 
-#####Declarative: Checkout SCM
+##### Declarative: Checkout SCM
 Jenkins obtains a Jenkinsfile in the Git repository.
 
 ##### Build
