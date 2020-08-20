@@ -25,9 +25,9 @@ Python/Flask REST API endpoints for AWS S3 Bucket
 
 - **Install and configure _AWS CLI_ with an _IAM User_ privileged to create, read, update, delete the _AWS S3 Buckets_**
 
-- **Install and configure _Docker_ and _DockerHub_**
-
 - **Install and configure _Git_ and _GitBash_**
+
+- **Install and configure _Docker_ and _DockerHub_**
 
 - **Install and configure the _Jenkins_**
 
@@ -35,6 +35,8 @@ Python/Flask REST API endpoints for AWS S3 Bucket
 
 
 ## Spin up the whole stack via _Jenkins_
+
+##### Follow the instructions in the below visuals to setup Jenkins pipeline job with 
 
 ![image](https://drive.google.com/uc?export=view&id=17_QTdZ-zSHCBCe2zh6EYA_gFDtn_MykX)
 
@@ -49,4 +51,4 @@ Python/Flask REST API endpoints for AWS S3 Bucket
 
 > P.S. Kindly write here for more queries and suggestions @ **jai.jgec@gmail.com**
 
-> **©** **2020** The Project is intended for learning purposes only.
+> **©** **2020** The Project is publicly intended for learning purpose.
