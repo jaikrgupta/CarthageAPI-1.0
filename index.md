@@ -68,4 +68,5 @@ Jenkins pulls the Docker image to deploy and release the Flask app on Heroku.
 
 
 > P.S. Kindly write here for more queries and suggestions @ **jai.jgec@gmail.com**
+
 > **©** **2020** The Project is publicly intended for learning purpose.
