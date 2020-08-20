@@ -42,7 +42,7 @@
 Jenkins obtains a Jenkinsfile in the Git repository.
 
 ##### Build
-Jenkins clones the Git repository. It builds the flask app to run.
+Jenkins clones the Git repository & builds the flask app to run.
 
 ##### Test
 Jenkins starts testing the REST API Endpoints are active with the CURL commands written in the test-script.sh.
