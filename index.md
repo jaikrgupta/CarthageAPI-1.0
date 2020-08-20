@@ -36,21 +36,21 @@ Python/Flask REST API endpoints for AWS S3 Bucket
 
 ## Spin up the whole stack via _Jenkins_
 
-####The Jenkins pipeline mainly goes through these stages in Series: 
+#### The Jenkins pipeline mainly goes through these stages in Series: 
 
 #####Declarative: Checkout SCM
 Jenkins obtains a Jenkinsfile in the Git repository.
 
-#####Build
+##### Build
 Jenkins clones the Git repository. It builds the flask app to run.
 
-#####Test
+##### Test
 Jenkins starts testing the REST API Endpoints are active with the CURL commands written in the test-script.sh.
 
-#####Dockerize
+##### Dockerize
 Jenkins dockerizes the flask app and pushes the container on DockerHub.
 
-#####Deployment
+##### Deployment
 Jenkins pulls the Docker image to deploy and release the Flask app on Heroku.
 
 
