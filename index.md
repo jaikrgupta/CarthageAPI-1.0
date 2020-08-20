@@ -1,5 +1,5 @@
 # CarthageAPI-1.0
-#### Python/Flask REST API endpoints for AWS S3 Bucket 
+Python/Flask REST API endpoints for AWS S3 Bucket 
 
 
 ## Simple CURL Commands to test the REST API Endpoints
@@ -35,6 +35,24 @@
 
 
 ## Spin up the whole stack via _Jenkins_
+
+####The Jenkins pipeline mainly goes through these stages in Series: 
+
+#####Declarative: Checkout SCM
+Jenkins obtains a Jenkinsfile in the Git repository.
+
+#####Build
+Jenkins clones the Git repository. It builds the flask app to run.
+
+#####Test
+Jenkins starts testing the REST API Endpoints are active with the CURL commands written in the test-script.sh.
+
+#####Dockerize
+Jenkins dockerizes the flask app and pushes the container on DockerHub.
+
+#####Deployment
+Jenkins pulls the Docker image to deploy and release the Flask app on Heroku.
+
 
 ##### Follow the instructions in the below visuals to setup Jenkins pipeline job with 
 
