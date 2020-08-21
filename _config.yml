@@ -1,6 +1,6 @@
 title: CarthageAPI-1.0
 logo: https://drive.google.com/uc?export=view&id=1asb85uAVYGr6PqWYym8X_HjYT8PD2mQi
 description: Python/Flask REST API endpoints for AWS S3 Bucket
-theme: jekyll-theme-minimal
 show_downloads: false
 google_analytics: UA-175997753-1
+theme: jekyll-theme-minimal
