@@ -1,3 +1,4 @@
+aniso8601==8.0.0
 astroid==2.3.3
 awscli==1.18.116
 blinker==1.4
